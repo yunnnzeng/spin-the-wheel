@@ -1,0 +1,48 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    /* 使用 overflow: hidden 來隱藏超出邊界的部分 */
+    border: 2px solid black;
+}
+
+.segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    border-radius: 50%;
+    /* 確保每個部分都是圓形 */
+}
+
+.segment1 {
+    background-color: #ff5733;
+    transform: rotate(0deg);
+}
+
+.segment2 {
+    background-color: #33ff57;
+    transform: rotate(90deg);
+}
+
+.segment3 {
+    background-color: #5733ff;
+    transform: rotate(180deg);
+}
+
+.segment4 {
+    background-color: #ffcc33;
+    transform: rotate(270deg);
+}
+
+.spin-button {
+    margin-top: 20px;
+}

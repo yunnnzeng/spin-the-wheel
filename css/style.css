@@ -3,6 +3,11 @@
     margin-top: 50px;
 }
 
+.turntable {
+    margin: 20px auto;
+    position: relative;
+}
+
 .wheel {
     width: 300px;
     height: 300px;
@@ -24,23 +29,35 @@
 }
 
 .segment1 {
-    background-color: #ff5733;
+    background-color: #726da8;
     transform: rotate(0deg);
 }
 
 .segment2 {
-    background-color: #33ff57;
+    background-color: #7d8cc4;
     transform: rotate(90deg);
 }
 
 .segment3 {
-    background-color: #5733ff;
+    background-color: #a0d2db;
     transform: rotate(180deg);
 }
 
 .segment4 {
-    background-color: #ffcc33;
+    background-color: #bee7e8;
     transform: rotate(270deg);
+}
+
+.pointer {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-top: 25px solid #E39EC1;
+    z-index: 10;
+    /* 確保指針在上面 */
 }
 
 .spin-button {

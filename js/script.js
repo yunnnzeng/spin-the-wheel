@@ -6,7 +6,7 @@ function spinWheel() {
     var wheel = document.querySelector('.wheel');
     var spinButton = document.querySelector('.spin-button');
     // Math.random() 0~1之間
-    var deg = Math.floor(1000 + Math.random() * 5000); // 旋轉的角度，可自行調整
+    var deg = Math.floor(1080 + Math.random() * 360*14); // 旋轉的角度，可自行調整
 
     spinButton.style.pointerEvents = 'none'; // 防止連續點擊
 
@@ -17,7 +17,6 @@ function spinWheel() {
       spinning = false;
       spinButton.style.pointerEvents = 'auto';
       const actualDeg = deg % 360;
-      console.log(actualDeg)
       let pointerDeg = 360 - actualDeg + 90; // 計算指針所在的角度
       if (pointerDeg >= 360) {
         pointerDeg -= 360;
